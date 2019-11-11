@@ -1,17 +1,33 @@
-{% load static %}
+{% load sass_tags %}
+{% load staticfiles %}
+
 <html>
-  <head>
-    <title>Django blog</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1><a href="{% url 'home' %}">Django blog</a></h1>
-    </header>
-    <div>
-      {% block content %}
-      {% endblock content %}
-    </div>
-  </body>
-</html>
+	<head>
+	<title>PyCurious</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+	<link href="{% sass_src 'scss/main.scss' %}" rel="stylesheet" type="text/css" />
+
+	</head>
+	<body>
+		<!-- <div id="navbar">
+			<div id="site-name">
+			</div>
+			<div id="site-nav">
+			</div> 
+		</div>-->
+
+		
+		<!-- <div class="arrow-up"><i class="fas fa-arrow-circle-up"></i></div>-->
+
+		{% block content %}
+		{% endblock %}
+
+		<div class="social-container">
+			<a href="https://github.com/caitsnyder"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/caitlin-snyder/"><i class="fab fa-linkedin"></i></a>
+		</div>
+	</body>
+	</html>	
+
+
+

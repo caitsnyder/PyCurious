@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+  
+
+<div class="index-banner">
+  <div class="banner-text">
+    <div class="banner-title">PyCurious</div>
+    <div class="banner-subtitle">
+      Caitlin tackles Python one blog post at a time.
+    </div>
+  </div>
+  <div class="snake-container">
+    <img src="{% static 'img/snake_trans.png' %}" alt="My image">
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="blog-container">
+
+    <div class="blog-content">
+      {% for post in object_list %}
+          <div class="section-title">
+            <div class="headline">
+              <a href="{% url 'post_detail' post.pk %}">
+                {{ post.title }}
+              </a>
+            </div>
+            <div class="post-date">
+              {{ post.date }}
+            </div>
+            <div class="post-body">
+              <p>{{ post.body }}</p>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+
+</div>
+
+{% endblock content %}

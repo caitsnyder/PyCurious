@@ -10,3 +10,7 @@ class PycListView(ListView):
 class PycDetailView(DetailView):
 	model = Post
 	template_name = 'post_detail.html'
+
+class PycResumeView(ListView):
+	model = Post
+	template_name = 'resume.html'
