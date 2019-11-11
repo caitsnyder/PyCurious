@@ -23,8 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pyc.apps.PycConfig',
-    'django_heroku',
-    'sass_processor',
+    # 'django_heroku',
+    # 'sass_processor',
 ]
 
 MIDDLEWARE = [
