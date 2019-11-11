@@ -1,6 +1,5 @@
 import os
 import sys
-import django-heroku
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pyc_project.settings')
