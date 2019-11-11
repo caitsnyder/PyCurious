@@ -11,7 +11,12 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com', '.pycurious.com']
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1', 
+    '.herokuapp.com', 
+    '.pycurious.com', 
+    'pycurious.com',]
 
 
 # Application definition
