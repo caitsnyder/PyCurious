@@ -25,7 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pyc.apps.PycConfig',
     'gunicorn',
-    # 'django_heroku',
     'sass_processor',
 ]
 
@@ -59,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'pyc_project.wsgi.application'
 
 
 # Database
