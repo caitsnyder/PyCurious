@@ -128,7 +128,7 @@ STATICFILES_FINDERS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Django Sass
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'static/scss')
+# SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'static/scss')
 
 # Configure Django App for Heroku.
 # import django_heroku
