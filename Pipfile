@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 django = "==2.2.4"
 gunicorn = "==19.9.0"
-django-heroku = "*"
+django-sass-processor = "==0.7.4"
 
 [requires]
 python_version = "3.7"
