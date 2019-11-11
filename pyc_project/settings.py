@@ -1,5 +1,4 @@
 import os
-from boto.s3.connection import S3Connection
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -7,12 +6,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 os.environ["SECRET_KEY"]
+#heroku run python manage.py migrate
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 
-ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, ‘pycurious.herokuapp.com’]
+ALLOWED_HOSTS = [‘localhost’, '127.0.0.1', '.herokuapp.com’]
 
 
 # Application definition
@@ -36,7 +36,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'pyc_project.urls'
