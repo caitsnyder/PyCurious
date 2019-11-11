@@ -6,13 +6,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 os.environ["SECRET_KEY"]
-#heroku run python manage.py migrate
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 
-ALLOWED_HOSTS = [‘localhost’, '127.0.0.1', '.herokuapp.com’]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com’]
 
 
 # Application definition
