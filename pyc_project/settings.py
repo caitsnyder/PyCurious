@@ -11,7 +11,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com', '.pycurious.com']
 
 
 # Application definition
@@ -107,9 +107,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'pyc_project/static/')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
