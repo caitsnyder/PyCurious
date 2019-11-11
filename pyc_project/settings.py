@@ -1,5 +1,4 @@
 import os
-import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pyc.apps.PycConfig',
     'gunicorn',
-    'django_heroku',
+    # 'django_heroku',
     'django_sass_processor',
 ]
 
@@ -130,4 +129,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'static/scss')
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals())
+# import django_heroku
+# django_heroku.settings(locals())
