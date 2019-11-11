@@ -113,8 +113,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-
-
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'sass_processor.finders.CssFinder',
@@ -124,5 +122,5 @@ STATICFILES_FINDERS = [
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'static/scss')
 
 # Configure Django App for Heroku.
-import django_heroku
+# import django_heroku
 django_heroku.settings(locals())
