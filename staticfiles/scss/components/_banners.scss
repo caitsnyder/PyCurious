@@ -1,0 +1,78 @@
+.outer-banner {
+    width: 100vw;
+    height: 55vh;
+    background-color: rgb(255,255,255);
+    z-index:1;
+}
+
+.index-banner {
+    margin: 0vh auto;
+    padding: 0.5rem 0 0 0rem;
+    width: 100vw;
+    height: 55vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(15, 40, 37), teal);
+    border-bottom: 10px solid rgba(15,40,37,0.5);
+    border-top: 25px solid rgba(15,40,37,0.5);
+}
+
+.banner-text {
+    margin: auto 0;
+    padding: 0vh 0 8vh 8vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+    text-align: left;
+}
+
+.banner-title {
+    margin: 0;
+    padding: 0 0 0 2vw;
+    font-size: 9vw;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+.banner-subtitle {
+    padding: 1rem 0 0 2.4vw;
+    font-size: 2vw;
+    color: rgb(255,255,255);
+    font-weight: lighter;
+    letter-spacing: .05em;
+}
+
+.call-to-action {
+    margin-top: 1em;
+    padding: 0.5rem 2rem;
+    color: rgba(15,40,37,0.5);
+    text-shadow: 2px 2px 2px rgba(87,242,193,0.5);
+    font-size: 0.6em;
+    background: rgba(255,255,255,1.0);
+    letter-spacing: 3px;
+    border-radius: 80px;
+    font-weight: bold;
+}
+
+.call-to-action:hover {
+    font-style: italic;
+}
+
+.snake-container {
+    margin: 10vh 0 0 0vw;
+    overflow: visible;
+}
+
+#snake-image {
+    margin: 0px 0 0 0;
+    padding: 3.5vh 0 0 1.5vw;
+    height: 40vh;
+    position: relative;
+}
