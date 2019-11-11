@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'pyc.apps.PycConfig',
     'gunicorn',
     # 'django_heroku',
-    # 'sass_processor',
+    'sass_processor',
 ]
 
 MIDDLEWARE = [
@@ -118,7 +118,7 @@ STATICFILES_DIRS = (
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django_sass_processor.finders.CssFinder',
+    'sass_processor.finders.CssFinder',
 ]
 
 # Simplified static file serving.
