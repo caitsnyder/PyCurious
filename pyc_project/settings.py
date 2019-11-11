@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'pyc.apps.PycConfig',
     'gunicorn',
     # 'django_heroku',
-    'django_sass_processor',
+    'sass_processor',
 ]
 
 MIDDLEWARE = [
