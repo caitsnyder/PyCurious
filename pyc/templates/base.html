@@ -6,15 +6,18 @@
 	<title>PyCurious</title>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
 	<link href="{% sass_src 'scss/main.scss' %}" rel="stylesheet" type="text/css" />
-
+	<script type="text/javascript" src="{% static 'js/d3.v4.js' %}"></script>
 	</head>
 	<body>
-		<!-- <div id="navbar">
+		<script type="text/javascript" src="{% static 'js/shapes.js' %}"></script>
+		 <div id="navbar">
 			<div id="site-name">
+				<a href="{% url 'home' %}">PyCurious</a>
 			</div>
 			<div id="site-nav">
+				<a class="nav-link" href="{% url 'resume' %}">Resume</a>
 			</div> 
-		</div>-->
+		</div>
 
 		
 		<!-- <div class="arrow-up"><i class="fas fa-arrow-circle-up"></i></div>-->

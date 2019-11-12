@@ -1,4 +1,5 @@
 .outer-banner {
+    margin: 2vh auto 0vh auto;
     width: 100vw;
     height: 55vh;
     background-color: rgb(255,255,255);
@@ -6,24 +7,25 @@
 }
 
 .index-banner {
-    margin: 0vh auto;
-    padding: 0.5rem 0 0 0rem;
+    margin: 2vh auto 0vh auto;
+    padding: 2rem 0 0 0rem;
     width: 100vw;
-    height: 55vh;
+    height: 70vh;
     position: fixed;
-    top: 0;
+    top: 2vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    background-image: linear-gradient(to right, rgb(15, 40, 37), teal);
-    border-bottom: 10px solid rgba(15,40,37,0.5);
-    border-top: 25px solid rgba(15,40,37,0.5);
+    background-image: linear-gradient(to bottom right, 
+                        rgba(15, 136, 136, 1), 
+                        rgba(15, 136, 136, 0.5));
+    border-bottom: 10px solid rgba(138, 247, 212,0.3);
 }
 
 .banner-text {
     margin: auto 0;
-    padding: 0vh 0 8vh 8vw;
+    padding: 0vh 0 8vh 9vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -65,14 +67,3 @@
     font-style: italic;
 }
 
-.snake-container {
-    margin: 10vh 0 0 0vw;
-    overflow: visible;
-}
-
-#snake-image {
-    margin: 0px 0 0 0;
-    padding: 3.5vh 0 0 1.5vw;
-    height: 40vh;
-    position: relative;
-}

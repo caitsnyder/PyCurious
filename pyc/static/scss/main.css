@@ -10,29 +10,29 @@ a {
   right: 0.75vw; }
 
 .outer-banner {
+  margin: 2vh auto 0vh auto;
   width: 100vw;
   height: 55vh;
   background-color: white;
   z-index: 1; }
 
 .index-banner {
-  margin: 0vh auto;
-  padding: 0.5rem 0 0 0rem;
+  margin: 2vh auto 0vh auto;
+  padding: 2rem 0 0 0rem;
   width: 100vw;
-  height: 55vh;
+  height: 70vh;
   position: fixed;
-  top: 0;
+  top: 2vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-  background-image: linear-gradient(to right, #0f2825, teal);
-  border-bottom: 10px solid rgba(15, 40, 37, 0.5);
-  border-top: 25px solid rgba(15, 40, 37, 0.5); }
+  background-image: linear-gradient(to bottom right, #0f8888, rgba(15, 136, 136, 0.5));
+  border-bottom: 10px solid rgba(138, 247, 212, 0.3); }
 
 .banner-text {
   margin: auto 0;
-  padding: 0vh 0 8vh 8vw;
+  padding: 0vh 0 8vh 9vw;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -69,16 +69,6 @@ a {
 .call-to-action:hover {
   font-style: italic; }
 
-.snake-container {
-  margin: 10vh 0 0 0vw;
-  overflow: visible; }
-
-#snake-image {
-  margin: 0px 0 0 0;
-  padding: 3.5vh 0 0 1.5vw;
-  height: 40vh;
-  position: relative; }
-
 body {
   margin: 0px;
   padding: 0rem 0 0 0rem;
@@ -92,17 +82,6 @@ body {
   font-size: 50px;
   color: #0f2825;
   font-family: 'Open Sans Condensed', sans-serif; }
-
-.marble-bg {
-  margin: 0px;
-  padding: 0rem 0 0 0rem;
-  width: 100vw;
-  height: 100%;
-  background-image: url(../img/snake_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  z-index: 0; }
 
 .main-container, .full-container {
   display: flex;
@@ -119,7 +98,7 @@ body {
   width: 70vw;
   z-index: 10;
   position: absolute;
-  top: 500px; }
+  top: 650px; }
 
 .full-container {
   margin: -3rem auto 0rem auto;
@@ -127,6 +106,7 @@ body {
   width: 80vw; }
 
 .content-container {
+  margin: 7vh 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -199,37 +179,43 @@ input[type=submit]:hover {
 
 #navbar {
   margin: 0;
-  padding: 0.6rem 0rem 0.8rem 0rem;
-  height: 1vh;
+  padding: 0 0rem 0rem 0rem;
+  height: 7vh;
   width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 15;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #0f2825, #08504e);
+  background-image: linear-gradient(to right, #0f8888, #4ca8a7);
   font-size: .5em;
-  box-shadow: 0px 0px 5px 0px #0f2825; }
+  box-shadow: 0px 0px 5px 0px rgba(15, 40, 37, 0.8); }
 
 #site-name {
-  margin-left: 2rem;
-  color: #fff9f4; }
+  margin: auto 0 auto 2rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .05em; }
 
 #site-name:hover {
   font-style: italic;
   background: -webkit-linear-gradient(90deg, #57f2c1 20%, rgba(255, 255, 255, 0) 10%); }
 
 #site-nav {
+  margin: auto 1rem auto 0;
   display: flex;
   align-items: center;
   padding-right: 1rem; }
 
 .nav-link {
-  margin-right: 1rem;
+  padding-top: 0.1rem;
   color: #fff9f4;
-  font-size: .76em; }
+  font-size: .7em;
+  font-weight: bold;
+  letter-spacing: .05em; }
 
 .nav-link:hover {
   font-style: italic;
@@ -303,7 +289,7 @@ input[type=submit]:hover {
   border-bottom: solid 6px rgba(87, 242, 193, 0.4);
   background-image: url(../img/c_with_snake.png);
   background-repeat: no-repeat;
-  background-size: 30rem auto;
+  background-size: 40rem auto;
   background-position: bottom right; }
 
 .resume-title {
